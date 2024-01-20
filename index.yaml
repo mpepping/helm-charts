@@ -1,0 +1,32 @@
+apiVersion: v1
+entries:
+  whoami:
+  - annotations:
+      artifacthub.io/changes: |
+        - Use latest helm templates
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: whoami
+          image: "containous/whoami:v1.5.0"
+    apiVersion: v2
+    appVersion: v1.5.0
+    created: "2024-01-20T10:19:58.726144379Z"
+    description: Tiny Go webserver that prints os information and HTTP request to
+      output
+    digest: e22bd27a36f8fd1eaae46cc7e22413717afa9551f942ca78f52356271e94272f
+    home: https://github.com/containous/whoami
+    keywords:
+    - golang
+    - go
+    - whoami
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: whoami
+    sources:
+    - https://github.com/containous/whoami
+    type: application
+    urls:
+    - https://github.com/mpepping/helm-charts/releases/download/whoami-1.0.0/whoami-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-01-20T10:19:58.726153686Z"
