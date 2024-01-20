@@ -135,7 +135,7 @@
                 <p class="info">
                   {{ (index $chartEntry 0).Name }}
                   ({{ (index $chartEntry 0).Version }}@{{ (index $chartEntry 0).AppVersion }})
-                  <a href="https://github.com/mpepping/helm-charts/charts/{{ $key }}">
+                  <a href="https://github.com/mpepping/helm-charts/tree/main/charts/{{ $key }}">
                     <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
                   </a>
                 </p>
@@ -147,11 +147,13 @@
           </div>
         {{end}}
             {{end}}
-        <p>Based on work of <a href="https://github.com/halkeye">@halkeye</a> and <a href="https://github.com/tjungbauer/">@tjungbauer</a>.</p>
-        <p>
-          <time datetime="{{ .Generated.Format "2006-01-02T15:04:05" }}" pubdate id="generated">{{ .Generated.Format "Mon Jan 2 2006 03:04:05PM MST-07:00" }}</time>
-        </p>
       </div>
+
+      <h3>About</h3>
+      <p>Based on work of <a href="https://github.com/halkeye">@halkeye</a> and <a href="https://github.com/tjungbauer/">@tjungbauer</a>.</p>
+
+      <h3>Generated</h3>
+      <p><time datetime="{{ .Generated.Format "2006-01-02T15:04:05" }}" pubdate id="generated">{{ .Generated.Format "Mon Jan 2 2006 03:04:05PM MST-07:00" }}</time></p>
 
     <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
     <script>new ClipboardJS('.btn');</script>
