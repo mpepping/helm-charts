@@ -125,14 +125,6 @@
 
       <p>These are presented as is. Anyone is free to use them, and make suggestions, but they were created for my own use. At some point I want to submit them to the actual helm charts repo.</p>
 
-      <h2>How they are built</h2>
-      <p>
-        <ul>
-          <li><a href="https://github.com/mpepping/jenkins-shared-library/blob/master/vars/buildHelmChart.groovy">Jenkins Pipeline</a></li>
-          <li><a href="https://github.com/mpepping-helm-charts/">Github repos</a></li>
-        </ul>
-      </p>
-
       <h2>Charts</h2>
 
       <div class="charts">
@@ -147,7 +139,7 @@
                 <p class="info">
                   {{ (index $chartEntry 0).Name }}
                   ({{ (index $chartEntry 0).Version }}@{{ (index $chartEntry 0).AppVersion }})
-                  <a href="https://github.com/mpepping-helm-charts/{{ $key }}">
+                  <a href="https://github.com/mpepping/helm-charts/charts/{{ $key }}">
                     <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
                   </a>
                 </p>
