@@ -30,7 +30,7 @@ jobs:
 
     - name: Create Frontpage
       run: |
-        helm repo-html -t tpl/index.tpl
+        helm repo-html -t index.tpl
 
     - name: Commit files
       run: |

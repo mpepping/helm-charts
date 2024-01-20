@@ -4,7 +4,7 @@ type: application
 appVersion: "v1.5.0"
 description: Tiny Go webserver that prints os information and HTTP request to output
 name: whoami
-version: 1.0.1
+version: 1.0.3
 keywords:
   - golang
   - go
