@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -122,9 +121,6 @@
         </button>
         <code>helm repo add mpepping https://mpepping.github.io/helm-charts</code>
       </pre>
-
-      <p>These are presented as is. Anyone is free to use them, and make suggestions, but they were created for my own use. At some point I want to submit them to the actual helm charts repo.</p>
-
       <h2>Charts</h2>
 
       <div class="charts">
@@ -151,9 +147,11 @@
           </div>
         {{end}}
             {{end}}
+        <p>Based on work of <a href="https://github.com/halkeye">@halkeye</a> and <a href="https://github.com/tjungbauer/">@tjungbauer</a></p>
+        <p>
+          <time datetime="{{ .Generated.Format "2006-01-02T15:04:05" }}" pubdate id="generated">{{ .Generated.Format "Mon Jan 2 2006 03:04:05PM MST-07:00" }}</time>
+        </p>
       </div>
-    </section>
-        <time datetime="{{ .Generated.Format "2006-01-02T15:04:05" }}" pubdate id="generated">{{ .Generated.Format "Mon Jan 2 2006 03:04:05PM MST-07:00" }}</time>
 
     <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
     <script>new ClipboardJS('.btn');</script>
