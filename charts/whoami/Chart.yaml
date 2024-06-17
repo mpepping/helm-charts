@@ -2,7 +2,7 @@ apiVersion: v2
 type: application
 # image: "containous/whoami"
 appVersion: "v1.5.0"
-description: Tiny Go webserver that prints os information and HTTP request to output\
+description: Tiny Go webserver that prints os information and HTTP request to output
 icon: https://github.com/mpepping/helm-charts/raw/gh-pages/images/whoami.png
 name: whoami
 version: 1.5.0
