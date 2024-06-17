@@ -1,10 +1,10 @@
 apiVersion: v2
 type: application
-appVersion: "v0.1.0"
-description: Tiny webserver that accepts any GET or POST request
+appVersion: "v0.1.1"
+description: Webserver that accepts any GET or POST request for mocking purposes
 icon: https://github.com/mpepping/helm-charts/raw/gh-pages/images/request-logger.png
 name: request-logger
-version: 0.1.0
+version: 0.1.1
 keywords:
   - python
   - request-logger
