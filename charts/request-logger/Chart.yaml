@@ -1,0 +1,23 @@
+apiVersion: v2
+type: application
+appVersion: "v0.1.0"
+description: Tiny webserver that accepts any GET or POST request
+icon: https://github.com/mpepping/helm-charts/raw/gh-pages/images/request-logger.png
+name: request-logger
+version: 0.1.0
+keywords:
+  - python
+  - request-logger
+home: https://github.com/mpepping/request-logger
+sources:
+  - https://github.com/mpepping/request-logger
+maintainers:
+  - name: Martijn Pepping
+    email: martijn.pepping@automiq.nl
+annotations:
+  artifacthub.io/changes: |
+    - Use latest helm templates
+  artifacthub.io/containsSecurityUpdates: "false"
+  artifacthub.io/images: |
+    - name: request-logger
+      image: "ghcr.io/mpepping/request-logger:1.3.0"
