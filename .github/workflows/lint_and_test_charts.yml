@@ -36,10 +36,10 @@ jobs:
           changed=$(ct list-changed --target-branch ${{ github.event.repository.default_branch }})
           if [[ -n "$changed" ]]; then
             # echo "::set-output name=changed::true"
-            echo name=changed::true" >> $GITHUB_OUTPUT
+            echo "name=changed::true" >> $GITHUB_OUTPUT
           else
             # echo "::set-output name=changed::false"
-            echo name=changed::false" >> $GITHUB_OUTPUT
+            echo "name=changed::false" >> $GITHUB_OUTPUT
           fi
 
         # you MUST increase the version of the chart, otherwise chart-releaser will fail
