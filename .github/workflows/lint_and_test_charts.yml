@@ -30,17 +30,17 @@ jobs:
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2.2.1
 
-      - name: Run chart-testing (list-changed)
-        id: list-changed
-        run: |
-          changed=$(ct list-changed --target-branch ${{ github.event.repository.default_branch }})
-          if [[ -n "$changed" ]]; then
-            # echo "::set-output name=changed::true"
-            echo "name=changed::true" >> $GITHUB_OUTPUT
-          else
-            # echo "::set-output name=changed::false"
-            echo "name=changed::false" >> $GITHUB_OUTPUT
-          fi
+      # - name: Run chart-testing (list-changed)
+      #   id: list-changed
+      #   run: |
+      #     changed=$(ct list-changed --target-branch ${{ github.event.repository.default_branch }})
+      #     if [[ -n "$changed" ]]; then
+      #       # echo "::set-output name=changed::true"
+      #       echo "name=changed::true" >> $GITHUB_OUTPUT
+      #     else
+      #       # echo "::set-output name=changed::false"
+      #       echo "name=changed::false" >> $GITHUB_OUTPUT
+      #     fi
 
         # you MUST increase the version of the chart, otherwise chart-releaser will fail
       - name: Run chart-testing (lint)
