@@ -42,13 +42,13 @@ jobs:
       #       echo "name=changed::false" >> $GITHUB_OUTPUT
       #     fi
 
-        # you MUST increase the version of the chart, otherwise chart-releaser will fail
-      - name: Run chart-testing (lint)
-        run: |
-          #if [ "${{ steps.list-changed.outputs.changed }}" = true ]; then
-          #  echo "checking changed charts only"
-            ct lint --debug --target-branch ${{ github.event.repository.default_branch }}
-          #else
-          #  echo "checking ALL charts"
-          #  ct lint --all --debug --target-branch ${{ github.event.repository.default_branch }}
-          #fi
+      #   # you MUST increase the version of the chart, otherwise chart-releaser will fail
+      # - name: Run chart-testing (lint)
+      #   run: |
+      #     #if [ "${{ steps.list-changed.outputs.changed }}" = true ]; then
+      #     #  echo "checking changed charts only"
+      #       ct lint --debug --target-branch ${{ github.event.repository.default_branch }}
+      #     #else
+      #     #  echo "checking ALL charts"
+      #     #  ct lint --all --debug --target-branch ${{ github.event.repository.default_branch }}
+      #     #fi
